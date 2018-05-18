@@ -1,0 +1,7 @@
+@mixin form-ouvidoria{
+    .form-ouvidoria{
+        @include set-form;
+
+        float: right;
+    }
+}

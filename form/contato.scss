@@ -1,0 +1,6 @@
+@import 'mixins';
+@mixin form-contato{
+    .form-contato{
+        @include set-form(50px);
+    }
+}

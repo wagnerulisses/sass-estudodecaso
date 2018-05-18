@@ -1,0 +1,5 @@
+@mixin set-form($padding: '10px'){
+    padding: $padding;
+    display: block;
+    text-align: center;
+}

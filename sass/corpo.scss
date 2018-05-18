@@ -1,0 +1,210 @@
+$corpo-width : 980px;
+$corpo-conteudo-width : 750px;
+$corpo-color-ccc : #ccc;
+
+
+/**
+* Inicio do Corpo Estrutural
+* Composto de 4 Estruturas
+**/
+.corpo{
+    /*    background:blue;*/
+    width: $corpo-width;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 10px 0 0 0;
+    /*background: red;*/
+
+    .banner-principal{
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .mapa-do-site ul{
+        padding: 0 10px;
+        overflow: auto;
+
+        li{
+            list-style: none;
+        
+            float: left;
+            padding: 0;
+            margin-right: 10px;
+        
+            color: black;
+            font-size: 10px;
+
+            a{
+                color: darkblue;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline
+                }
+            }
+
+        }
+    }
+
+    .estrutura-lateral{
+        width: 200px;
+        float: left;
+
+        ul{
+            margin: 0;
+            padding: 0;
+
+            
+        }
+        ul.menu-destaque li{
+            margin: 0 10px;
+            padding: 3px 10px;
+            list-style: none;
+            border-top: 1px solid $corpo-color-ccc;
+
+            &:last-child{
+                border-bottom: 1px solid $corpo-color-ccc;
+            }
+
+            a{
+                text-decoration: none;
+                font-size: 14px
+            }
+        }
+
+        ul.menu-estruturado li{
+            h3{
+                border-top: 5px solid green;
+                background-color: $corpo-color-ccc;
+                padding: 10px;
+                padding-bottom: 20px;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+
+            a{
+                color: #333;
+                border-bottom: 1px solid $corpo-color-ccc;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-size: 15px;
+                display: block;
+            }
+
+            li:first-child a{
+                padding-top: 0;
+            }
+        }
+    }
+
+    .conteudo{
+        width: $corpo-conteudo-width;
+        float: left;
+        margin-left: 20px;
+        /*background-color: pink;*/
+
+        .noticia-destaque{
+            overflow: auto;
+        }
+
+        h3{
+            border-top: 5px solid green;
+            background-color: $corpo-color-ccc;
+            padding: 10px;
+            padding-bottom: 30px;
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        .noticia-destaque{
+            small{
+                text-transform: uppercase;
+            }
+
+            h4{
+                font-size: 26px;
+                margin: 10px 0;
+            }
+
+            .noticia-chamada{
+                p{
+                    font-size: 14px;
+                }
+
+                img{
+                    float: left;
+                    margin-right: 20px;
+                }
+
+                img.right{
+                    float:right;
+                    margin-right: 0;
+                    margin-left: 20px;
+                }
+            }
+
+            a{
+                text-decoration: none;
+                color: #000;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .noticia-destaque-conteudo{
+            img{
+                float: left;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+
+            p{
+                text-align: justify;
+            }
+        }
+
+        .noticia-lista{
+            padding-top: 20px;
+
+            ul{
+                padding: 0; margin: 0;
+
+                li{
+                    list-style: none;
+                    width: 230px;
+                    float: left;
+                    margin-right: 30px;
+
+                    &:last-child{
+                        margin: 0
+                    }
+                }
+            }
+
+            a{
+                text-decoration: none;
+                color: #000;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            h4{
+                font-size: 15px;
+            }
+
+            p{
+                font-size: 14px;
+            }
+
+            small{
+                font-size: 10px;
+            }
+        }
+    }
+}

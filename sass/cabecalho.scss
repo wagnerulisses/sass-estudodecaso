@@ -1,0 +1,180 @@
+$cabecalho-cor-verde : #0A651A;
+$cabecalho-cor-cinza : #ccc;
+
+
+/**
+* Estilos do Cabeçalho
+**/
+.cabecalho{
+    width: 980px;
+    margin: 0 auto;
+}
+
+
+/*******************************/
+/* INÍCIO CABEÇALHO INFORMAÇÃO */
+/*******************************/
+.cabecalho-informacao{
+    background-color: #f1f1f1; /* definindo cor de fundo */
+    overflow: auto;
+
+    a{
+        color: #726060; /* definindo cor do texto */
+        text-decoration: none; /* removendo "underline" */
+        font-size: 12px; /* definindo tamanho do texto */
+        font-weight: bold;
+
+        &:hover{
+            text-decoration: underline; /* mostrar o "underline" no link */
+        }
+    }
+
+    ul{
+        margin: 5px 0; /* definindo margem (top/bottom) e (left/right) ao mesmo tempo */
+
+        li{
+            float: left; /* estrutura deverá flutuar à esquerda */
+            list-style: none; /* removendo estilo de marcador padrão */
+            padding: 5px 20px; /* espaçamento interno sendo aplicado */
+            border-left: 1px solid $cabecalho-cor-cinza; /* criando uma borda esquerda */
+
+            &:last-child{
+                border-right: 1px solid $cabecalho-cor-cinza; /* criando uma borda direita */
+            }
+        }
+    }
+
+    .informacao-brasil{
+        float:left;
+        width: 100px;
+        padding:10px 0;
+        padding-left: 20px;
+    
+        font: bold 12px/18px tahoma;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #726060; /* definindo cor do texto */
+
+        img{
+            display: block;
+            float: left;
+            margin-right: 10px;
+        
+        }
+
+        span{
+            display: block;
+            float: left;
+            line-height: 20px;
+        }
+    }
+
+    .informacao-servicos{
+        float: left;
+        width: 320px;
+        padding: 0;
+
+        li{
+            float: left;
+        }
+    }
+
+    .informacao-links{
+        float: left;
+        width: 540px;
+        padding: 0;
+        margin: 0px;
+
+        ul{
+            float: right;
+        }
+    }
+}
+
+@font-face{
+    font-family: openSansBold;
+    src: url('../fonts/OpenSans-ExtraBold.ttf');
+}
+
+
+.cabecalho-destaque{
+    background-color: $cabecalho-cor-verde;
+    margin: 0;
+    overflow: auto;
+
+    h1{
+        float: left;
+        width: 430px;
+        padding-left: 20px;
+    
+        font-family: openSansBold, arial, sans-serif, times;
+        font-size: 38px;
+        color: #ffdc19;
+    }
+
+    .busca{
+        width: 510px;
+        float: right;
+        padding-top: 30px;
+
+        form{
+            background-color: white;
+            width: 230px;
+            padding: 5px;
+            float: right;
+            margin-right: 20px;
+        
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            input{
+                border: 0;
+                font-size: 12px;
+                color: #666;
+                line-height: 18px;
+
+                &[type="text"]{
+                    width: 200px;
+                    float: left
+                }
+
+                &[type="image"]{
+                    width: 20px;
+                    float: left
+                }
+            }
+        }
+    }
+}
+
+.cabecalho-ouvidoria{
+    background-color: #00420C;
+    margin: 0;
+    overflow: auto;
+
+    ul{
+        text-align: right;
+        margin: 0;
+        margin-right: 10px;
+        padding: 10px;
+
+        li{
+            list-style: none;
+            display: inline;
+            border-right: 1px solid #999;
+            padding: 0px 10px;
+
+            &:last-child{
+                border: none;
+                padding-right: 0;
+            }
+
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 13px;
+            }
+        }
+    }
+}

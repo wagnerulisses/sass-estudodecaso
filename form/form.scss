@@ -1,0 +1,13 @@
+@import 'contato';
+@import 'ouvidoria';
+@import 'faq';
+
+$gera-form : true;
+
+
+@if($gera-form){
+    @include form-contato;
+    @include form-ouvidoria;
+    @include form-faq;
+}
+

@@ -1,0 +1,7 @@
+@mixin form-faq{
+    .form-faq{
+        @include set-form;
+
+        float: right;
+    }
+}
